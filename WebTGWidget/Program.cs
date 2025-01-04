@@ -4,6 +4,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+// Открываем доступ к приложению на всех интерфейсах
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(5000);  // Устанавливаем порт 5000 (или любой другой)
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
