@@ -38,6 +38,15 @@ app.MapGet("/telegramMembers", () =>
 	})
 	.WithName("GetWeatherForecast");
 
+app.MapGet("/getgif", async (HttpContext context) =>
+{
+	string gifPath = Path.Combine(Directory.GetCurrentDirectory(), "animated.gif");
+    byte[] gifBytes = await File.ReadAllBytesAsync(gifPath);
+
+    context.Response.ContentType = "image/gif";
+    await context.Response.Body.WriteAsync(gifBytes);
+});
+
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

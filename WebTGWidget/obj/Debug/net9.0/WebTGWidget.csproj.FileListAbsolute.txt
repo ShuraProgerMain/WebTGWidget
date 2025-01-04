@@ -31,3 +31,4 @@ D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\obj\Debug\net9.0\refint\WebTGWidg
 D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\obj\Debug\net9.0\WebTGWidget.pdb
 D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\obj\Debug\net9.0\WebTGWidget.genruntimeconfig.cache
 D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\obj\Debug\net9.0\ref\WebTGWidget.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\obj\Debug\net9.0\WebTGWidget.sourcelink.json

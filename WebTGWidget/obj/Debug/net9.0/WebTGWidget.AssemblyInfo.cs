@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebTGWidget")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78ce059b0ecebe581f06acfd12e4550980469dff")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebTGWidget")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebTGWidget")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
