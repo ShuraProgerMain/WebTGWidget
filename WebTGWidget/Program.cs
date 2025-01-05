@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using Telegram.Bot;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -65,32 +66,36 @@ internal sealed partial class TelegramChecker
 
 	public async Task<string> GetMembersCount()
 	{ 
-		string channelUrl = $"https://t.me/{_channelId}";
+		var bot = new TelegramBotClient("7269572623:AAEP_LR91SmY69tDf1T4jcmMG2Hs28Qz2hw");
+		int memberCount = await bot.GetChatMemberCount(_channelId);
 
-		using HttpClient client = new HttpClient();
-		try
-		{
-			string html = await client.GetStringAsync(channelUrl);
-
-			Regex regex = MyRegex();
-			Match match = regex.Match(html);
-
-			if (match.Success)
-			{
-				string subscribers = match.Groups[1].Value;
-				Console.WriteLine($"Member's count: {subscribers}");
-				
-				return UpdateString(subscribers);
-			}
-
-			Console.WriteLine("Can't get members count");
-		}
-		catch (Exception ex)
-		{
-			Console.WriteLine($"Exception: {ex.Message}");
-		}
-
-		return "0";
+		return UpdateString(memberCount.ToString());
+		// string channelUrl = $"https://t.me/{_channelId}";
+		//
+		// using HttpClient client = new HttpClient();
+		// try
+		// {
+		// 	string html = await client.GetStringAsync(channelUrl);
+		//
+		// 	Regex regex = MyRegex();
+		// 	Match match = regex.Match(html);
+		//
+		// 	if (match.Success)
+		// 	{
+		// 		string subscribers = match.Groups[1].Value;
+		// 		Console.WriteLine($"Member's count: {subscribers}");
+		// 		
+		// 		return UpdateString(subscribers);
+		// 	}
+		//
+		// 	Console.WriteLine("Can't get members count");
+		// }
+		// catch (Exception ex)
+		// {
+		// 	Console.WriteLine($"Exception: {ex.Message}");
+		// }
+		//
+		// return "0";
 	}
 
     [GeneratedRegex(@"<div class=""tgme_page_extra"">\s*([\d,]+)\s+subscribers\s*</div>")]
