@@ -38,7 +38,7 @@ app.MapGet("/telegramMembers", () =>
 	})
 	.WithName("GetWeatherForecast");
 
-app.MapGet("/getgif", async (HttpContext context) =>
+app.MapGet("/getgif/animated.gif", async (HttpContext context) =>
 {
 	string gifPath = Path.Combine(Directory.GetCurrentDirectory(), "animated.gif");
     byte[] gifBytes = await File.ReadAllBytesAsync(gifPath);
