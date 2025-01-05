@@ -60,7 +60,7 @@ record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 
 internal sealed partial class TelegramChecker
 {
-	private readonly string _channelId = "shuraprogerTGC";
+	private readonly string _channelId = "@shuraprogerTGC";
 	
 	public string ChannelId => _channelId;
 
