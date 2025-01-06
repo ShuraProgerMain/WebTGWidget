@@ -55,7 +55,7 @@ app.MapGet("/discordOnlineMembers", async () =>
 		{
 			Message = "Hello, World!",
 			Status = "Success",
-			DispData = onlineMembersCount.ToString()
+			DispData = StringFormat.UpdateString(onlineMembersCount.ToString())
 		};
 		
 		return jsonResponse;
@@ -71,7 +71,7 @@ app.MapGet("/discordAllMembers", async () =>
 		{
 			Message = "Hello, World!",
 			Status = "Success",
-			DispData = totalMembersCount.ToString()
+			DispData = StringFormat.UpdateString(totalMembersCount.ToString())
 		};
 
 		Console.WriteLine(totalMembersCount);
