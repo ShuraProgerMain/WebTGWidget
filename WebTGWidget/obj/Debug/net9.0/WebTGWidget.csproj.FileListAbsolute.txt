@@ -32,3 +32,15 @@ D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\obj\Debug\net9.0\WebTGWidget.pdb
 D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\obj\Debug\net9.0\WebTGWidget.genruntimeconfig.cache
 D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\obj\Debug\net9.0\ref\WebTGWidget.dll
 D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\obj\Debug\net9.0\WebTGWidget.sourcelink.json
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\Discord.Net.Commands.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\Discord.Net.Core.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\Discord.Net.Interactions.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\Discord.Net.Rest.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\Discord.Net.Webhook.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\Discord.Net.WebSocket.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\Newtonsoft.Json.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\System.Interactive.Async.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\System.Linq.Async.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\System.Reactive.dll
+D:\C#Projects\TGWidget\WebTGWidget\WebTGWidget\bin\Debug\net9.0\Telegram.Bot.dll
